@@ -1,6 +1,6 @@
 .func-text {
   color: blue;
-  font-size: 10px;
+  font-size: 12px;
   cursor: pointer;
   margin-top: 5px;
   text-align: right;
@@ -26,4 +26,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.head{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
 }

@@ -64,6 +64,7 @@ function FriendsList({ friends, setFriends }) {
 
   return (
     <div>
+      <div className="head">FRIENDS LIST</div>
       <div className="input-container">
         <InputForm addFriend={addFriend} />
         <input
