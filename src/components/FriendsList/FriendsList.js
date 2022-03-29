@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import Card from "../Card/Card";
 import InputForm from "../InputForm/InputForm";
 import Pagination from "../Pagination/Paginantion";

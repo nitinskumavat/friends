@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./App.css";
 import FriendsList from "./components/FriendsList/FriendsList";
-import InputForm from "./components/InputForm/InputForm";
 import { data } from "./data";
 
 function App() {
