@@ -29,17 +29,22 @@ const Pagination = (props) => {
   let lastPage = paginationRange[paginationRange.length - 1];
   return (
     <ul className="page-list">
-      <li className="nav-btn" onClick={() => currentPage > 1 && onPrevious()}>
+      <li
+        className="nav-btn"
+        onClick={() => currentPage > 1 && onPrevious()}
+        key={"prev"}
+      >
         prev
       </li>
-      {paginationRange.map((pg) => {
+      {paginationRange.map((pg, i) => {
         if (pg === "...") {
-          return <li>...</li>;
+          return <li key={i}>...</li>;
         }
         return (
           <li
             className={pg == currentPage ? "page-no active-pg" : "page-no"}
             onClick={() => onPageChange(pg)}
+            key={i}
           >
             {pg}
           </li>
@@ -48,6 +53,7 @@ const Pagination = (props) => {
       <li
         className="nav-btn"
         onClick={() => currentPage < lastPage && onNext()}
+        key={"next"}
       >
         next
       </li>

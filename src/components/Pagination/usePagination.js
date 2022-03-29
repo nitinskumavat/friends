@@ -11,7 +11,6 @@ const range = (start, end) => {
 function usePagination({ totalCount, pageSize, currentPage }) {
   const paginationRange = useMemo(() => {
     const totaPageCount = Math.ceil(totalCount / pageSize);
-    console.log("total page ", totaPageCount);
     const totalPageNumbers = 6;
 
     if (totalPageNumbers >= totaPageCount) {
