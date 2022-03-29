@@ -1,0 +1,34 @@
+.page-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  justify-content: center;
+}
+
+.page-no {
+  border-radius: 50%;
+  margin: 2px;
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+.page-no:hover {
+  background-color: rgb(185, 180, 180);
+}
+
+.active-pg {
+  background-color: rgb(185, 180, 180);
+}
+
+.nav-btn {
+  cursor: pointer;
+  margin: 0 5px;
+  border: 1px solid black;
+  padding: 3px 8px;
+  border-radius: 15%;
+}
+
+.nav-btn:active {
+  background-color: #cfcfcf;
+}
