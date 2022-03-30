@@ -1,0 +1,24 @@
+.search-box {
+    margin: 4px;
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    border: 1px solid black;
+    overflow: hidden;
+    align-items: center;
+  }
+  
+  .search-box>img{
+      width: 36px;
+      height: 30px;
+  }
+  
+  .search-box>input{
+      border-style: none;
+      width: 100%;
+      height: 100%;
+  }
+  
+  .search-box>input:focus{
+      outline: none;
+  }

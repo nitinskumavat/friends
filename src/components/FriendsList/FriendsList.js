@@ -3,6 +3,7 @@ import Card from "../Card/Card";
 import InputForm from "../InputForm/InputForm";
 import Pagination from "../Pagination/Paginantion";
 import "./friendlist.css";
+import SearchBox from "../SearchBox/Searchbox";
 
 function FriendsList({ friends, setFriends }) {
   const PageSize = 4;
@@ -50,6 +51,7 @@ function FriendsList({ friends, setFriends }) {
   };
 
   const updateSearch = (value) => {
+    setCurrentPage(1);
     setSearchQuery(value);
   };
 
@@ -67,16 +69,19 @@ function FriendsList({ friends, setFriends }) {
       <div className="head">FRIENDS LIST</div>
       <div className="input-container">
         <InputForm addFriend={addFriend} />
-        <input
-          className="search-box"
-          type="text"
-          onChange={(e) => {
-            setCurrentPage(1);
-            updateSearch(e.target.value);
-          }}
-          value={searchQuery}
-          placeholder={"Search Friend"}
-        ></input>
+        <SearchBox updateSearch={updateSearch} />
+        {/* <div className="search-box">
+          <input
+            className=""
+            type="text"
+            onChange={(e) => {
+              updateSearch(e.target.value);
+            }}
+            value={searchQuery}
+            placeholder={"Search Friend"}
+          ></input>
+          <img src={search}></img>
+        </div> */}
       </div>
       <div className="func-text" onClick={() => sortByFav()}>
         Sort by Favourite
